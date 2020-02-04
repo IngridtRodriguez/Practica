@@ -1,0 +1,80 @@
+<!doctype html>
+
+<head>
+	<meta charset="utf-8">
+	<title>
+		Pet Specifics
+	</title>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+        <article class="form-group">
+        <form  action = "../Templates/schedule.html">  
+            <div class="input-group">
+                <h1>Yay, we love dogs! Give us he basics abut your pup.</h1>
+			   
+				<div class="form-row">
+					<label for="petname">Name</label>
+					<br>
+				<input type="text" name="petname" placeholder="Pet's Name">
+				<label for="Photo">Upload a photo</label>
+				 <div class="choose_file">
+					<label for="photo"><img src="../PaginaWeb/icon/photo.png"></label>
+					<input name="Select File" type="file" />
+				</div>
+				</div>
+				<div class="form-row">
+					<label for="Breed">Breed</label>
+					<br>
+				<input type="text" name="petBreed" placeholder="Pet's Breed">
+				<label for="Birthday">Birthday</label>
+				<input type="date" name="petBreed" placeholder="MM/DD/YYYY">
+				</div>
+				<div>
+							<label for="Gender">Gender</label>
+						<ul class="gender-rad">
+							<li>
+							<input type="radio" id="male" name="Gender" >
+							<label for="male">male</label>
+							</li>
+							<li>
+							<input type="radio" id="female" name="Gender">
+							<label for="female">female</label>
+							</li>
+						</ul>
+
+				</div>
+            
+       		 </div>
+            <section class="white-footer">
+                <br>
+                <input class="btn-white" type="submit" name="btn-back" value="Back">
+                <input class="btn-darkgray" type="submit" name="btn-next" value="Next">
+            </section>
+        </form>
+    </article>
+        <aside>
+            <div class="info">
+            <img class="logo-pata" src="css/pata.png">
+            <ul class="a">
+                <li>
+                    Human profile
+                </li>
+                <li>
+                    Pet basics
+                </li>
+                <li>
+                    Pet details
+                </li>
+                <li>
+                    Confirm
+                </li>
+            </ul>
+            <a href="">Save and log out</a> 
+        </div>
+        </aside>
+    </div>
+</body>
+</html>
