@@ -122,15 +122,21 @@ button{
     padding-left: 100px;
     padding-right: 100px;
     flex: 3;
+    position: relative;
 }
 
 .white-footer{
     background-color: white;
-    position:absolute;
-    padding: 20px;
-    justify-content: space-evenly;
     bottom: 0px;
-    width: 100%;
+    margin-top: 120px;
+    flex:1;
+    position: absolute;
+    width: calc(100% - 30px);
+    left: 0px;
+    bottom: 0px;
+    /* padding: 30px 30px; */
+    padding-left: 30px;
+    padding-bottom: 20px;
 }
 
 .btn-darkgray{
@@ -212,3 +218,74 @@ li{
     border-radius: 50px;
     padding:10px;
 }
+
+@media (max-width: 1000px){
+    .animal-button{
+        display: flex;
+        justify-content: space-evenly;
+    }
+  }
+  .choose_file{
+    position:relative;
+    display:flex;    
+    widows: 40px; 
+    height: 40px; 
+    
+  }
+  .choose_file img{
+  
+  width: 40px;
+  height: 40px; 
+  flex-basis: center; 
+  }
+  .choose_file input[type="file"]{
+    -webkit-appearance:none; 
+    position:absolute;
+    top:0; left:0;
+    opacity:0; 
+    height: 30px;
+    width: 30px;
+  
+  }
+  .gender-rad {
+    list-style-type: none;
+    margin: 25px 0 0 0;
+    padding: 0;
+  }
+  .gender-rad li {
+    float: left;
+    margin: 0 5px 0 0;
+    width: 80px;
+    height: 20px;
+    position: relative;
+  }
+  .gender-rad label,
+  .gender-rad input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .gender-rad input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+    background:	#FDFDFD;
+  }
+  
+  .gender-rad input[type="radio"]:checked+label,
+  .Checked+label {
+    background: #CCC;
+  }
+  
+  .gender-rad label {
+    padding: 5px;
+    border: 1px solid rgb(64, 64, 66);
+    cursor: pointer;
+    z-index: 90;
+  }
+  
+  .gender-rad label:hover {
+    background: #DDD;
+  }
