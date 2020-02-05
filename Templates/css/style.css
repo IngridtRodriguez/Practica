@@ -281,8 +281,10 @@ li{
   
   .gender-rad label {
     padding: 5px;
-    border: 1px solid rgb(64, 64, 66);
+    border: 2px solid rgb(176, 176, 194);
+    border-radius: 10%;
     cursor: pointer;
+    text-align: center;
     z-index: 90;
   }
   
