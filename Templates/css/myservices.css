@@ -1,0 +1,181 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #F0F0F2;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+  li {
+    padding: 5px;
+    overflow: auto;
+  }
+
+ /*--- container ---*/
+ .flex-container{
+    display: flex;
+    min-height: 100vh;
+    align-items: stretch;
+    position: relative;
+ }
+
+ .container aside {
+    flex:1;
+    order:1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container article {
+    background-color: #F0F0F2;
+    order:2;
+    flex:1.6;
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container-fluid{
+    display: flex;
+}
+
+  /*--- navigation bar ---*/
+  .logo-pata{
+    background-color: white;
+    border-radius: 50px;
+    padding:10px;
+    }
+
+  .navbar {
+    background:#D9DDE0;
+  }
+
+  .navbar-nav{
+    padding:10px;
+  }
+
+  .nav-link,
+  .navbar-brand {
+    cursor: pointer;
+  }
+  .nav-link {
+    margin-right: 1em !important;
+  }
+  .nav-link:hover {
+    color: rgb(80, 77, 77);
+  }
+
+  /*-- Columna--*/
+  .col-md-4{
+      padding-right: 0;
+      padding-left: 0;
+      background-color: rgb(229, 229, 233);
+  }
+
+  .col-md-6{
+      background-color: white;
+      padding-right: 0;
+      padding-left: 0;
+  }
+
+  .feature-title {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  .feature-date{
+    font-size: 1.1rem;
+  }
+
+  .feature-time, .feature-service{
+    font-size: 0.8rem;
+  }
+
+  /*--Lista de servicios--*/
+.services-list-title{
+    color: #333;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.item-title{
+    font-size: 1rem;
+}
+
+  /*--Detalles de servicio --*/
+  .message-img{
+      transform: scale(0.50);
+      float: left;
+  }
+
+  .card-text.details{
+      font-size: 0.9rem;
+  }
+
+  .card-img-top.quote{
+    border-radius: 50%;
+    background-color:#D9DDE0;
+    transform: scale(0.35);
+    padding:15px;
+  }
+
+  .card-img-top.details{
+    border-radius: 15px;
+  }
+
+  .message-footer{
+      font-size: 0.9rem;
+  }
+
+  .message-photo{
+        transform: scale(0.5);
+        border-radius: 20px;
+        float: right;
+  }
+
+  /* My services card */
+  .card-header{
+      text-transform: uppercase;
+      font-size: 0.8rem;
+  }
+
+  p.mb-1{
+      font-size: 0.8rem;
+      padding:3px;
+  }
+
+  .card-header{
+    background-color: rgb(229, 229, 233);
+  }
+
+  .card.details {
+      padding: 20px;
+  }
+
+  .list-group-item{
+    background-color: rgb(229, 229, 233);
+    border-bottom: transparent;
+    color: black;
+}
+
+  .list-group-item.active{
+      background-color: white;
+      border-bottom: transparent;
+      color: black;
+  }
+  
+
+
