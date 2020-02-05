@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "version": "0.1.0",
+=======
+    "version": "2.0.0",
+>>>>>>> 95f32a02152d025560c7a53ef7e05b76a9f28dc2
     "command": "Chrome",
     "windows": {
         "command": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
