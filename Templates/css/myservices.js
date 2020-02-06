@@ -1,4 +1,4 @@
-/*(function() {
+(function() {
   'use strict';
   window.addEventListener('load', function() {
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -14,11 +14,4 @@
       }, false);
     });
   }, false);
-})();*/
-
-$("#btn_next").click(function(){
-  if ($("#contrasena").val() !='' && $("#confirmPswd").val() !='' && $('#contrasena').val() == $('#confirmPswd').val()){
-    $("#btn_next").attr("disabled",false);
-    $(".invalid-feedback").show();     
-  }
-});
+})();
