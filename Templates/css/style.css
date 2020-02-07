@@ -9,7 +9,10 @@ Botones:
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
-
+.welcome {
+    height: 100vh;
+    align-items: center;
+}
 h1 {
     color: #585858;
     font-size: 35px;
@@ -36,6 +39,7 @@ table{
     border-collapse: collapse;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 th,td{
     text-align: start;
@@ -80,15 +84,32 @@ button{
     position: relative;
 }
 
-.container aside {
+.container-fluid aside {
     background-color: #D9DDE0;
-    flex:1;
-    order:1;
+    height: 100vh;
     align-items: center;
-    justify-content: center;
-    display: flex;
+}
+.first {
+    padding-left: 2rem;
+}
+.zipfield{
+    padding-left: 2rem;
 }
 
+.ziparea{
+    
+    height: 100vh;
+    align-items: center;
+    background-color: #F0F0F2;
+    order:2;
+    flex:1.6;
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 .form-row{
     display:flex;
     vertical-align: middle;
@@ -117,6 +138,7 @@ button{
     justify-content: center;
     position: relative;
 }
+
 
 .form-group,.form-group .input-group{
     padding-top: 30px;
