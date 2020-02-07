@@ -43,7 +43,7 @@ jQuery.validator.setDefaults({
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
-        }else if(document.getElementById('contrasena')!=document.getElementById('confirmPswd')){
+        }else if((document.getElementById('contrasena').val != document.getElementById('confirmPswd').val)){
           document.getElementById('confirmPswd').setCustomValidity("Passwords must coincide");
           event.preventDefault();
           event.stopPropagation();
@@ -53,6 +53,29 @@ jQuery.validator.setDefaults({
     });
   }, false);
 })();
+
+/* Visibilidad de contraseña*/
+function passVisibility() {
+  var x = document.getElementById("contrasena");
+  if (x.type === "password") {
+    x.type = "text";
+    $("#eyeFont").addClass('fas fa-eye').removeClass('fa fa-eye-slash');
+  } else {
+    x.type = "password";
+    $("#eyeFont").addClass('fa fa-eye-slash').removeClass('fas fa-eye');
+  }
+}
+
+function passVisibility2() {
+  var x = document.getElementById("confirmPswd");
+  if (x.type === "password") {
+    x.type = "text";
+    $("#eyeFont2").addClass('fas fa-eye').removeClass('fa fa-eye-slash');
+  } else {
+    x.type = "password";
+    $("#eyeFont2").addClass('fa fa-eye-slash').removeClass('fas fa-eye');
+  }
+}
 
 /*Ejemplo
 function myFunction() {

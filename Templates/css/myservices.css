@@ -244,6 +244,11 @@ h3{
 	text-align: center;
 }
 
+/* Password eye toggle */
+.checkbox.ojo{
+  display: none;
+}
+
   
 
 
