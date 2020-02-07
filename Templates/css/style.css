@@ -9,7 +9,10 @@ Botones:
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
-
+.welcome {
+    height: 100vh;
+    align-items: center;
+}
 h1 {
     color: #585858;
     font-size: 35px;
@@ -37,8 +40,9 @@ table{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 th,td{
-    text-align: start;
+    text-align:  start;
     padding: 8px;
 }
 
@@ -79,16 +83,46 @@ button{
     align-items: stretch;
     position: relative;
 }
-
-.container aside {
+.container-fluid{
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    align-items: stretch;
+}
+.container-fluid aside {
     background-color: #D9DDE0;
-    flex:1;
-    order:1;
+    height: 100vh;
     align-items: center;
-    justify-content: center;
-    display: flex;
+    min-height: 100vh;
+    align-items: stretch;
+}
+.first {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+.zipfield{
+    padding-left: 2rem;
+}
+.btnStarted{
+    padding-top: 1rem;
+    align-content: center;
+    text-decoration-line: none;
 }
 
+.ziparea{
+    
+    height: 100vh;
+    align-items: center;
+    background-color: #F0F0F2;
+    order:2;
+    flex:1.6;
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 .form-row{
     display:flex;
     vertical-align: middle;
@@ -117,6 +151,7 @@ button{
     justify-content: center;
     position: relative;
 }
+
 
 .form-group,.form-group .input-group{
     padding-top: 30px;
@@ -196,7 +231,9 @@ li{
     opacity: 0.01;
     z-index: 100;
 }
-
+.central{
+    padding: 6rem;
+}
 .animal-button label{
     background-color: rgb(236, 239, 241);
     padding-right: 20px;
@@ -370,16 +407,6 @@ button{
     align-items: stretch;
     position: relative;
 }
-
-.container aside {
-    background-color: #D9DDE0;
-    flex:1;
-    order:1;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
 .form-row{
     display:flex;
     vertical-align: middle;
@@ -665,15 +692,6 @@ button{
     position: relative;
 }
 
-.container aside {
-    background-color: #D9DDE0;
-    flex:1;
-    order:1;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
 .form-row{
     display:flex;
     vertical-align: middle;
@@ -875,3 +893,32 @@ li{
   .gender-rad label:hover {
     background: #DDD;
   }
+
+  /*starting anew Get Started css*/
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main-section {
+    position: relative;
+    height: 100vh;
+    background-color: #F0F0F2;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+    padding-top: 10rem;
+
+}
+.getStarted {
+    position: absolute;
+    height: 100vh;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    padding-bottom: 20px;
+    border: 1px solid transparent;
+}

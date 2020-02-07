@@ -2,39 +2,55 @@
 <!doctype html>
 
 <head>
-	<meta charset="utf-8">
 	<title>Get Started</title>
+	  <!-- Required meta tags -->
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1,">
+	  <meta http-equiv="x-ua-compatible" content="ie=edge">
+	  <!-- Bootstrap CSS -->
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link href="CSS/style.css" type="text/css" rel="stylesheet"> 
 </head>
 <body>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-	<div class="container">
-		
-		<aside >
-			<div class="info">
-				<img class="logo-pata" src="css/pata.png">
-			<h2>Why our services?</h2>
-			<p><ul class="a">
-				<li>We're animal lovers backed by insurance and experience</li>
-				<br></br>
-				<li>Powereb by tech, so you can book and pay from our app</li>
-				<br></br>
-				<li>We use GPS to let you track your sitter's location</li>
-				<br></br>
-				<li>Updates and pics for every visit keep you in the loop</li>
-			  </ul></p>
-			  </div>
-		</aside >
+<div class="container-fluid getStarted">
+
 	
-
-		<article class="form-group">	
-			<form action="Register.html">
-			  <h1>First, Let's make sure we serve your area.</h1>
-			  <input type="text" id="zipcode" name="Zip Code"  placeholder="Zip Code"></input>
-                <input class="btn-darkgray" type="submit" name="btn-next" value="Get Started">         
-			</form>
-		</article>
+	<div class="row text-center">
+		<div class="col-lg-8 col-sm-12 main-section">
+				<div class="col-12 title-text">
+						<h1 class="first">First,Let's make sure we serve your area.</h1>
+				</div>
+				<div class="container-fluid padding">
+						<div class="row padding justify-content-center">
+							<div class="col-2 col-xs-3">
+									<input class="form-control" type="number" placeholder="Zip Code"></input>
+							</div>
+							<div class="col-3">
+									<button type="button" class="btn-darkgray btn-outline-secondary btn-lg-2" onclick="window.location.href = 'Register.html';">Get Started</button>
+							</div>
+						</div>
+					</div>
+		</div>
+		<aside class="col-lg-4 d-lg-block d-none side-section pt-4">
+				<img class="logo-pata" src="css/pata.png">
+					<h2>Why our services?</h2>
+					<p><ul class="a">
+						<li>We're animal lovers backed by insurance and experience</li>
+						<br></br>
+						<li>Powereb by tech, so you can book and pay from our app</li>
+						<br></br>
+						<li>We use GPS to let you track your sitter's location</li>
+						<br></br>
+						<li>Updates and pics for every visit keep you in the loop</li>
+					  </ul></p>
+					<br>
+		</aside>
 	</div>
-
+</div>
 </body>
 </html>
