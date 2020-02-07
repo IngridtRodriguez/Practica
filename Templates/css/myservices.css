@@ -1,9 +1,24 @@
+/*
+Fondo de main es HTML code:	#F0F0F2
+Fondo de side es HTML code:	#D9DDE0
+Botones:
+    gris oscuro: HTML code:	#A4A3B4
+*/
+
 body {
     padding: 0;
     margin: 0;
     background: #F0F0F2;
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-bg-sidebar{
+  background-color: #D9DDE0;
+}
+
+.custom-bg-main{
+  background-color: #F0F0F2;
 }
 
 h3{
@@ -44,7 +59,25 @@ h3{
 }
 
 .container-fluid{
-    display: flex;
+  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+  align-items: stretch;
+}
+
+.white-footer{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+}
+
+.col{
+  height: 100vh;
+}
+
+.row{
+  height: 100vh;
 }
 
   /*--- navigation bar ---*/
@@ -72,6 +105,18 @@ h3{
   .nav-link:hover {
     color: rgb(80, 77, 77);
   }
+
+  .bottom-text{
+    position: absolute;
+    bottom: 0;
+    color: gray;
+  }
+
+  .bottom-text:hover{
+    color: black;
+    text-decoration: none;
+  }
+
 
   /*-- Columna--*/
   .col-md-4{
@@ -176,6 +221,9 @@ h3{
       border-bottom: transparent;
       color: black;
   }
+
+  /* -- Animal radiobutton -- */
+
   
 
 

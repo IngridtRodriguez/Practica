@@ -2,61 +2,101 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>
             Ejemplo
         </title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/myservices.css">
 
-        <link rel="stylesheet" href="css/style.css">
+        <!-- Jquery -->
+
+        <script src="jquery-3.4.1.min.js"></script>
+        
     </head>
 
     <body>
-        <div class="container">
-        <article>
-        <form class="form-group" action = "../Templates/Petbasics.html">  
-            <div class="input-group">
-                <h1>Good News! We care for pets in Winter Park. Let's create your account.</h1>
-            <div class="form-row">
-                <label for="correo">Email Address</label>
-                <br>
-                <input type="email" name="correo" placeholder="Your email address">
-            </div>
-            <div class="form-row">
-                <br><label for="contrasena">Password</label>
-                <input type="password" name="contrasena" placeholder="*******">
-            </div>
-            <div class="form-row">
-                <label for="confirmPswd">Confirm Password</label>
-                <input type="password" name="confirmPswd" placeholder="*******">
-            </div>
-            <br><input type="checkbox" class="checkmark" name="chckbox"><label for="chckbox">I have read the Privacy Policy and agree to the Terms of Service.</label>
-        </div>     
-        </form>
-        <section class="white-footer">
-            <br>
-            <a href="">Already a member? Log in</a> 
-            <a  href="../Templates/Petbasics.html" class="btn-darkgray" >Next</a>
-        </section>
-    </article>
-        <aside>
-            <div class="info">
-            <img class="logo-pata" src="css/pata.png">
-            <h2>Why our service?</h2>
-            <ul class="a">
-                <li>
-                    We're animal lovers backed by insurance and experience
-                </li>
-                <li>
-                    Powered by tech, so you can book and pay from our app
-                </li>
-                <li>
-                    We use GPS to let you track your sitter's location
-                </li>
-                <li>
-                    Updates and pics for every visit keep you in the loop
-                </li>
-            </ul>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="custom-bg-sidebar col-md-5 d-none d-md-block align-content-center flex-wrap justify-content-center p-5"> 
+                    <div class="sidebar-sticky p-3">
+                        <img class="logo-pata mb-5" src="css/pata.png">
+                        <h2>Why our service?</h2>
+                        <ul class="a">
+                            <li>
+                                We're animal lovers backed by insurance and experience
+                            </li>
+                            <li>
+                                Powered by tech, so you can book and pay from our app
+                            </li>
+                            <li>
+                                We use GPS to let you track your sitter's location
+                            </li>
+                            <li>
+                                Updates and pics for every visit keep you in the loop
+                            </li>
+                        </ul>
+                        <a class="bottom-text" href="">Save and log out</a> 
+                    </div>
+            </nav>
+
+            <main class="custom-bg-main col-md-7 pt-5 px-5 bg-main">
+                <form class="needs-validation" method="post" action = "#" novalidate>  
+                    <div class="input-group">
+                        <h1>Good News! We care for pets in Winter Park. Let's create your account.</h1>
+                            <div class="form-group">
+                                <label for="correo">Email Address</label>
+                                 <input class="form-control" type="email" id="correo" placeholder="Your email address" required>
+                                 <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                  <div class="invalid-feedback">
+                                    Doesn't look good!
+                                  </div>
+                            </div><br>
+                                <div class="form-group">
+                                    <label for="contrasena">Password</label>
+                                    <input type="password" class="form-control" id="contrasena" data-rule-email="true" placeholder="*******" required>
+                                    <div class="valid-feedback"></div>
+                                      <div class="invalid-feedback">
+                                      </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmPswd">Confirm Password</label>
+                                    <input class="form-control" type="password" id="confirmPswd" data-rule-email="true" data-rule-equalTo="#contrasena" placeholder="*******" required>
+                                    <div class="valid-feedback">
+                                      </div>
+                                      <div class="invalid-feedback">
+                                      </div>
+                                </div>
+                            
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="termService" required>
+                                <label class="form-check-label" for="termService">
+                                    I have read the Privacy Policy and agree to the Terms of Service
+                                </label>
+                                    <div class="invalid-feedback">
+                                      You must agree before submitting.
+                                    </div>
+                            </div>
+                    </div>     
+                
+                <section class="white-footer">
+                    <br>
+                    <a class="bottom-text" href="">Already a member? Log in</a> 
+                    <button id="btn_next" type="submit" class="btn btn-secondary ">Next</input>
+                    <!--href="../Templates/Petbasics.html"-->
+                </section>
+            </form>
+            </main>
         </div>
-        </aside>
     </div>
+    
+        <!-- Bootstrap query poper-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="css/myservices.js"></script>
     </body>
 </html>
