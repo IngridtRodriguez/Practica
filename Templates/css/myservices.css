@@ -59,10 +59,10 @@ h3{
 }
 
 .container-fluid{
-  height: 100vh;
-  min-height: 100vh;
-  position: relative;
-  align-items: stretch;
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    align-items: stretch;
 }
 
 .white-footer{

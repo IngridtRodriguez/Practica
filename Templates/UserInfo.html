@@ -4,94 +4,132 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Your info</title>
-	<link href="CSS\style.css" type="text/css" rel="stylesheet"> 
+	<link href="CSS\style.css" type="text/css" rel="stylesheet">
 	<!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!--<link rel="stylesheet" href="css/myservices.css">-->
 </head>
 <body>
-
-	<div class="container">
-		<aside>
-			<div class="info">
-				<img class="logo-pata" src="css/pata.png">
-				<ul class="a">
-					<li>
-						Human profile
-					</li>
-					<li>
-						Pet basics
-					</li>
-					<li>
-						Pet details
-					</li>
-					<li>
-						Confirm
-					</li>
-				</ul>
-				<a href="">Save and log out</a> 
+	<!-- Preloader con Progress bar Bootstrap -->
+	<div class='loader'>
+		<div class='loader-container'>
+			<div class='progress progress-striped active'>
+				<div class='progress-bar progress-bar-striped bg-secondary' id='bar' role='progressbar' style='width: 0%;'></div>
 			</div>
-		</aside >
+		</div>
+	</div>
+	
+	<!-- Pantalla principal -->
+
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="custom-bg-sidebar col-md-5 d-none d-md-block align-content-center flex-wrap justify-content-center p-5">
+				<div class="sidebar-sticky p-3">
+					<img class="logo-pata mb-5" src="css/pata.png">
+					<ul class="a">
+						<li>
+							Human profile
+						</li>
+						<li>
+							Pet basics
+						</li>
+						<li>
+							Pet details
+						</li>
+						<li>
+							Confirm
+						</li>
+					</ul>
+					<a class="bottom-text" href="">Save and log out</a> 			
+				</div>
+			</nav >
 	
 
-		<article class="form-group">	
-			<form >
+		<main class="custom-bg-main col-md-7 pt-5 px-5">	
+			<form class="needs-validation" id="PetbasicForm" method="post" action = "Petbasics.html">
 			<div class="input-group">
-			  <h1>Hello! please tell us a little bit about yourself</h1>
-					<div class="form-row">
-                		<label for="firstname">First Name</label>
-                		<br>
-					<input type="text" name="First name" placeholder="Your First Name">
-					<label for="lastname">Last Name</label>
-						<input type="text" name="Lastname" placeholder="Your First Name">
-					</div>
-					
-					<div class="form-row">
-						<label for="Phone">Phone Number</label>
-                		<br>
-					<input type="tel" name="Phone" placeholder="00-000-0000">
-					<label for="PhoneAlt">Phone Alt</label>
-						<input type="tel" name="phonenumberalt" placeholder="00-000-000">
-					</div>
-					
-					<div class="form-row">
-						<br>
-						<label for="Streetaddress">Street address </label>
-								<input type="text" name="Streetaddress" placeholder="Your Street Address">
+			  	<h1>Hello! please tell us a little bit about yourself</h1>
+					<div class="form-row pt-6 col-md-10">
+						<div class="col-5">
+							<label for="firstname">First Name</label>
+							<input type="text" class="form-control" id="firstName" placeholder="Your First Name" pattern="[A-Za-z]{2,}" required>
+							<div class="valid-feedback"></div>
+							<div class="invalid-feedback"></div>
 						</div>
-						<div class="form-row">
+
+						<div class="col">
+							<label for="lastname">Last Name</label>
+							<input type="text" class="form-control" id="Lastname" placeholder="Your Last Name" pattern="[A-Za-z]{2,}" required>
+							<div class="valid-feedback"></div>
+							<div class="invalid-feedback"></div>
+						</div>
+					</div>
+
+					<div class="form-row pt-6 col-md-10">
+						<div class="col-5">
+							<label for="Phone">Phone Number</label>
+							<input type="tel" class="form-control" id="Phone" placeholder="00-000-0000" pattern="\d{4}[\-]\d{4}" required>
+							<div class="valid-feedback"></div>
+							<div class="invalid-feedback"></div>
+						</div>
+
+						<div class="col">
+							<label for="PhoneAlt">Phone Alt</label>
+							<input type="tel" class="form-control" id="phonenumberalt" placeholder="00-000-000">
+							<div class="valid-feedback"></div>
+							<div class="invalid-feedback"></div>
+						</div>
+					</div>
+
+					<div class="form-row pt-6 col-md-10">
+						<div class="col">
+							<label for="Streetaddress">Street address </label>
+							<input type="text" class="form-control" id="Streetaddress" placeholder="Your Street Address">
+						</div>
+					</div>
+
+					<div class="form-row pt-6 col-md-10">
+						<div class="col-7">
 							<label for="city">City</label>
-							<br>
-						<input type="text" name="City" placeholder="Panama">
-						<label for="State">State</label>
-						<select name="States" >
-							<option value="Bocas del Toro">Bocas del Toro</option>
-							<option value="Chiriquí">Chiriquí</option>
-							<option value="Cocle">Coclé</option>
-							<option value="Colon">Colon</option>
-							<option value="Darien">Darien</option>
-							<option value="Herrera">Herrera</option>
-							<option value="Los Santos">Los Santos</option>
-							<option value="Panama">Panama</option>
-							<option value="Veraguas">Veraguas</option>
-						  </select>
-						  <label for="Zip">Zip</label>
-								<input  type="text" name="zip" placeholder="">
+							<input type="text" class="form-control" id="City" placeholder="Panama">
 						</div>
+	
+						<div class="col">
+							<label for="State">State</label>
+							<select class="form-control" id="States" >
+								<option value="Bocas del Toro">Bocas del Toro</option>
+								<option value="Chiriquí">Chiriquí</option>
+								<option value="Cocle">Coclé</option>
+								<option value="Colon">Colon</option>
+								<option value="Darien">Darien</option>
+								<option value="Herrera">Herrera</option>
+								<option value="Los Santos">Los Santos</option>
+								<option value="Panama">Panama</option>
+								<option value="Veraguas">Veraguas</option>
+							</select>
+						</div>
+
+						<div class="col">
+							<label for="Zip">Zip</label>
+							<input type="number" class="form-control" id="zip" placeholder="">
+						</div>
+					</div>
 			</div>
 
 			<section class="white-footer">
-                <br>
-                <a class="btn btn-light" href="Register.html">Back</a>
-                <a class="btn btn-secondary" href="Petbasics.html"></a>
+				<a class="btn btn-light" href="Register.html">Back</a>
+				<button id="btn_next" type="submit" class="btn btn-secondary">Next</input>
             </section>
-			</form>
-			
-			
-	 
-				
+		</form>
 
-		</section>
+	</main>
 	</div>
 
+	<!-- Bootstrap query poper-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="css/js/userinfo.js"></script>
 </body>
 </html>
