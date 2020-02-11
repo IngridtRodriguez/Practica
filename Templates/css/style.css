@@ -444,19 +444,6 @@ button{
     position: relative;
 }
 
-.white-footer{
-    background-color: white;
-    bottom: 0px;
-    margin-top: 120px;
-    flex:1;
-    position: absolute;
-    width: calc(100% - 30px);
-    left: 0px;
-    bottom: 0px;
-    /* padding: 30px 30px; */
-    padding-left: 30px;
-    padding-bottom: 20px;
-}
 
 .btn-darkgray{
     background-color: #585858;
@@ -729,19 +716,6 @@ button{
     position: relative;
 }
 
-.white-footer{
-    background-color: white;
-    bottom: 0px;
-    margin-top: 120px;
-    flex:1;
-    position: absolute;
-    width: calc(100% - 30px);
-    left: 0px;
-    bottom: 0px;
-    /* padding: 30px 30px; */
-    padding-left: 30px;
-    padding-bottom: 20px;
-}
 
 .btn-darkgray{
     background-color: #585858;
