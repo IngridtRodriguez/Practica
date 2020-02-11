@@ -25,13 +25,6 @@ $(window).on('load',function() {
 });
 
 //Validation
-/* $("#registerForm").validate();
-
-jQuery.validator.setDefaults({
-  errorElement: 'div',
-  errorClass: 'invalid-feedback'
-}) */
-
 (function() {
   'use strict';
   window.addEventListener('load', function() {
@@ -40,10 +33,16 @@ jQuery.validator.setDefaults({
     // Loop over them and prevent submission
     var validation = Array.prototype.filter.call(forms, function(form) {
       form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
+        var contra = $("#contrasena").val();
+        var confirm = $("#confirmPswd").val();
+
+        if (form.checkValidity() == false)
+        {
           event.preventDefault();
           event.stopPropagation();
-        }else if((document.getElementById('contrasena').val != document.getElementById('confirmPswd').val)){
+        }
+        if(contra != confirm)
+        {
           document.getElementById('confirmPswd').setCustomValidity("Passwords must coincide");
           event.preventDefault();
           event.stopPropagation();
