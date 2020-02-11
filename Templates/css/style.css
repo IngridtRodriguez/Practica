@@ -117,6 +117,11 @@ button{
     position: relative;
     align-items: stretch;
 }
+
+.row{
+    height: 100vh;
+  }
+
 .container-fluid aside {
     background-color: #D9DDE0;
     height: 100vh;
